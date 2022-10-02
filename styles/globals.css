@@ -24,3 +24,30 @@ a {
     background: black;
   }
 }
+
+.box {
+  width: 30%;
+  height: auto;
+  background: #c26be9;
+  padding: 50px;
+  text-align: center;
+  font-weight: 900;
+  color: #fff;
+  font-family: arial;
+  position:relative;
+  z-index: -1;
+}
+
+
+.sb2:before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 10px solid transparent;
+  border-right: 10px solid #c26be9;
+  border-top: 10px solid #c26be9;
+  border-bottom: 10px solid transparent;
+  left: -19px;
+  top: 6px;
+}
