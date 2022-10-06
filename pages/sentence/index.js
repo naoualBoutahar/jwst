@@ -79,7 +79,7 @@ export default function TypingEffect() {
             <Box flexDirection="column" display="flex" justifyContent="center" alignItems="center" marginBottom={10}>
                                 <Typography color="white" variant='h1'>The sentence</Typography>
                                 <Box style={{backgroundColor:finalResult==="success"?"green":"White"}} width={900}>
-                                <TextField placeholder='Formulate The sentence using Words and code below' variant="filled" color='secondary' fullWidth  onChange={(e)=>checkSentence(e)}  color={finalResult} focused/>
+                                <TextField placeholder='Formulate The sentence using Words and code below' variant="filled" fullWidth  onChange={(e)=>checkSentence(e)}  color={finalResult} focused/>
                                 </Box><Typography  color="white"  marginLeft={3}>(1-2-3)  (4-2-5-6-3) (7-8)  (9-10-4-1)  (6-11-12-13-5-11-14) (13-12 11-11-7-11)  (12-4) (2-7-15-3-14-16-7-13-17)   (4-2-5-6-3-18)  </Typography>
                                 
                 </Box>
@@ -91,7 +91,7 @@ export default function TypingEffect() {
                             <Box display="flex">
                                 <Typography color="white"  width={400} marginRight={3}>{word.word}</Typography>
                                <Box style={{backgroundColor:result[index]==="success"?"green":"White"}}>
-                                <TextField placeholder='answer' variant="filled" color='secondary' onChange={(e)=>checkWord(e,index)}  color={result[index]} focused/>
+                                <TextField placeholder='answer' variant="filled"  onChange={(e)=>checkWord(e,index)}  color={result[index]} focused/>
                                 </Box>
                                 <Typography  color="white"  marginLeft={3}>({word.code})</Typography>
                             </Box>
