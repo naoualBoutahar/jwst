@@ -68,6 +68,8 @@ export default function TypingEffect() {
         <>
             <Box style={{ zIndex: -1, overflow: 'hidden', position: 'fixed', height: '100%', width: '100%' }}>
                 <Image
+                        alt="bg"
+
                     src={gradient}
                     layout="fill"
                     objectFit="cover"

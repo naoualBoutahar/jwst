@@ -17,6 +17,8 @@ export default function TypingEffect() {
         <>
             <Box style={{ opacity: 0.9, zIndex: -1, overflow: 'hidden', position: 'fixed', height: '100%', width: '100%' }}>
                 <Image
+                        alt="bg"
+
                     src={bg}
                     layout="fill"
                     objectFit="cover"
@@ -28,7 +30,8 @@ export default function TypingEffect() {
                 alignItems="center"
                 justifyContent="center"
                 paddingTop={10}>
-                <Image src={astronaute}/>
+                <Image src={astronaute}         alt="bg"
+/>
                 <Box className="box sb2">< Typewriter
                     onInit={(typewriter) => {
                         typewriter.typeString("L'ets begin with some quick definition and facts .... ")
